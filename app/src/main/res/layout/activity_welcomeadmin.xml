@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.kashim.seun.overtime.WelcomeadminActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <Button
+            android:saveEnabled="true"
+            android:id="@+id/Button_Select_User_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:text="Select User id"/>
+
+
+        <TextView
+            android:id="@+id/Text_View_User_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/Button_Select_User_id"
+            android:background="#fff"
+            android:text="User Name"/>
+
+        <TextView
+            android:id="@+id/Text_View_Position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#fff"
+            android:textSize="16sp"
+            android:layout_below="@id/Text_View_User_Name"
+            android:text="Position"/>
+
+        <TextView
+            android:id="@+id/Text_View_Dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#fff"
+            android:textSize="26sp"
+            android:layout_below="@id/Text_View_Position"
+            android:text="Dept"/>
+
+
+        <TextView
+            android:id="@+id/Text_View_Phone_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="#fff"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:layout_below="@id/Text_View_Dept"
+            android:text="Phone Number"/>
+
+
+
+        <Button
+            android:id="@+id/Button_Over_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/Text_View_Phone_Number"
+            android:text="Overtime"
+            android:onClick="Overtime"
+            android:textSize="16sp"
+            />
+
+
+        <Button
+            android:id="@+id/Button_Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:layout_below="@id/Button_Over_Time"
+            android:text="Task"
+            android:onClick="Task"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

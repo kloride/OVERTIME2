@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    tools:context="com.kashim.seun.overtime.UseridActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/Text_View_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="34dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:textAllCaps="true"
+            android:text="user"/>
+
+
+        <EditText
+            android:id="@+id/Edit_Text_User_User_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:hint="User id"
+            android:imeActionLabel="User Id"
+            android:background="#fff"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000"
+            android:layout_marginBottom="24dp"
+            android:text="User Id"/>
+
+
+
+        <Button
+            android:id="@+id/Button_Clock_In"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:text="Clock IN"
+            android:textSize="16sp"
+            android:onClick="submit"/>
+
+        <ImageView
+            android:id="@+id/image_view_Photo"
+            android:layout_width="156dp"
+            android:layout_height="96dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:onClick="takePhoto"
+            android:layout_weight="0.21" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                tools:ignore="NewApi" />
+
+
+            <TextView
+                android:id="@+id/Text_View_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_marginBottom="24dp"
+                android:text="0" />
+
+
+            <TextView
+                android:id="@+id/Text_View_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_marginBottom="24dp"
+                android:text=":"/>
+
+
+            <TextView
+                android:id="@+id/Text_View_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="56sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000"
+                android:layout_marginBottom="24dp"
+                android:text="00"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Button_Clock_Out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:text="Clock Out"
+            android:onClick="submit"/>
+
+        <Button
+            android:id="@+id/Button_Break"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:text="Break"
+            android:textSize="16sp"
+            android:onClick="submit"/>
+
+
+        <Button
+            android:id="@+id/Button_Over_Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:text="Overtime "
+            android:textSize="16sp"
+            android:onClick="submit"/>
+
+
+
+        <EditText
+            android:id="@+id/Edit_Text_Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24dp"
+            android:text="Task"
+            android:hint="Task"
+            android:background="#fff"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

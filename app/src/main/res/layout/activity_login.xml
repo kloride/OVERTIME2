@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kashim.seun.overtime.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Text_View_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="34dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:background="#fff"
+            android:textAllCaps="true"
+            android:text="admin"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <EditText
+                android:id="@+id/Edit_Admin_User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="admin user"
+                android:background="#fff"
+                android:textSize="20dp"
+                android:layout_margin="12dp"
+                android:layout_alignParentRight="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionUnspecified"
+                android:textColor="@android:color/darker_gray"
+
+                />
+
+            <EditText
+                android:id="@+id/Edit_Text_Pass_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="#fff"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:layout_margin="12dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:layout_below="@+id/Edit_Admin_User" />
+
+
+            <Button
+                android:id="@+id/Button_Log_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_margin="12dp"
+                android:text="login"
+                android:onClick="login"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/Edit_Text_Pass_word"
+                android:layout_below="@+id/Edit_Text_Pass_word"
+                android:backgroundTint="#888"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHighlight="@android:color/darker_gray"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
